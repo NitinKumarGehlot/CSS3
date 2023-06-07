@@ -5,8 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Properties</title>
+    <style type="text/css">
+        h3{
+            color: red;
+        }
+        .headnum{
+            color: blue;
+        }
+    </style>
+    <style type="text/css">
+        table {
+            border: 1px solid blue;
+        }
+        th, td{
+            border: 1px solid magenta;
+        }
+    </style>
 </head>
 <body>
-    <!-- -->
+    <!-- Table border -->
+    <h3><span class="headnum">1.</span> Table border</h3>
+    <table>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>02</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- border-collapse -->
+    <h3><span class="headnum">2.</span> border-collapse</h3>
+    <table style="border-collapse: collapse;">
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>02</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- border-spacing -->
+    <h3><span class="headnum">3.</span> border-spacing</h3>
+    <table style="border-collapse: separate; border-spacing: 5px 15px;">
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>02</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- caption-side -->
+    <h3><span class="headnum">4.</span> caption-side</h3>
+    <table>
+        <caption>Student Details</caption>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>02</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption style="caption-side: bottom;">Student Details</caption>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>02</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- empty-cells -->
+    <h3><span class="headnum">5.</span> empty-cells</h3>
+    <table style="border-collapse: separate;">
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td></td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+    <br>
+    <table style="border-collapse: separate; empty-cells: hide;">
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td></td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- table-layout -->
+    <h3><span class="headnum">6.</span> table-layout</h3>
+    <table style="width:100%; table-layout: auto;">
+        <tr>
+            <td width="10%" >Loremipsumdolorsitametconsec</td>
+            <td width="90%" >Loremipsum</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width:100%; table-layout: fixed;">
+        <tr>
+            <td width="10%" >Loremipsumdolorsitametconsec</td>
+            <td width="90%" >Loremipsum</td>
+        </tr>
+    </table>
+
+    <!-- table width and height -->
+    <h3><span class="headnum">6.</span> table width and height</h3>
+    <table width="80%">
+        <th height="50px" >Name</th>
+        <th height="50px" >Roll</th>
+        <th height="50px" >Class</th>
+        <tr>
+            <td height="20px" >Nitin</td>
+            <td height="20px" >01</td>
+            <td height="20px" >11<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- padding -->
+    <h3><span class="headnum">7.</span> padding</h3>
+    <table style="border-collapse: collapse;">
+        <th style="padding:20px;" >Name</th>
+        <th style="padding:20px;" >Roll</th>
+        <th style="padding:20px;" >Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+    </table>
+    <br>
+    <table style="border-collapse: collapse;">
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td style="padding:20px;" >Nitin</td>
+            <td style="padding:20px;" >01</td>
+            <td style="padding:20px;" >11<sup>th</sup></td>
+        </tr>
+    </table>
+
+    <!-- table color -->
+    <h3><span class="headnum">8.</span> color</h3>
+    <table style="background-color: pink;">
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>01</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>02</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+    </table>
+
 </body>
 </html>
