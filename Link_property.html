@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Properties</title>
+    <style>
+        h3{
+            color: red;
+        }
+        .headnum{
+            color: blue;
+        }
+    </style>
+    <style>
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        a:hover must come after a:link and a:visited
+        a:active must come after a:hover
+    -->
+
+    <!-- a:link a:visited a:hover a:active-->
+    <h3><span class="headnum">1.</span> a:link a:visited a:hover a:active</h3>
+    <a href="">Click Me</a>
+    <a href="##">Click Me</a>
+
+</body>
+</html>

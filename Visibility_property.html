@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility Properties</title>
+    <style type="text/css">
+        h3{
+            color: red;
+        }
+        .headnum{
+            color: blue;
+        }
+    </style>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        tr.colps{
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- visible -->
+    <h3><span class="headnum">1.</span> visible</h3>
+    <p style="visibility: visible;">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sapiente, facilis eum voluptatum error sunt laborum facere omnis beatae dolorum autem placeat dolor, ex ad!</p>
+    
+    <!-- hidden -->
+    <h3><span class="headnum">2.</span> hidden</h3>
+    <p style="visibility: hidden;">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime facere deserunt reprehenderit quia atque. Autem recusandae ipsum ipsam, corrupti pariatur nostrum vitae magnam? Iure!</p>
+
+    <!-- collapse -->
+    <h3><span class="headnum">3.</span> collapse</h3>
+    <table>
+        <th>Name</th>
+        <th>Class</th>
+        <tr>
+            <td>Nitin</td>
+            <td>12<sup>th</sup></td>
+        </tr>
+        <tr class="colps">
+            <td>Hemant</td>
+            <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>10<sup>th</sup></td>
+        </tr>
+    </table>
+</body>
+</html>
